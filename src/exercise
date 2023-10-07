@@ -1,0 +1,32 @@
+Vocês estão codificando um novo RPG e a primeira coisa a ser feita, É definir a criação dos personagens.
+
+No projeto já¡ existe uma classe Personagem, que vai servir como um supertipo (classe pai) para os personagens,Â
+com a seguinte definições.
+
+public abstract class Personagem {
+
+  public Personagem(String nome) {
+  this.nome = nome;
+  }
+
+  private String nome;
+
+  abstract void atacar();
+  abstract void defender();
+
+
+  public String getNome() {
+    return nome;
+  }
+
+  public void setNome(String nome) {
+    this.nome = nome;
+  }
+}
+
+
+Crie três novos personagens (Arqueiro, Mago e Cavaleiro) extendendo de Personagem.
+Implemente os métodos atacar e criar e crie teste para as novas classes.
+Crie um projeto do zero, do jeito que achar melhor.
+Utilize JUnit para realizar os testes.
+Não é uma aplicação Spring.
